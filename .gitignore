@@ -1,4 +1,6 @@
 pyChosei3/__pycache__/*
 *.swp
 *secret*
-*.db
+db.*
+*/migrations/__pycache__/*
+*/migrations/*initial.py
