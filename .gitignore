@@ -1,0 +1,4 @@
+pyChosei3/__pycache__/*
+*.swp
+*secret*
+*.db
