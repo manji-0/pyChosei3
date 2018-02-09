@@ -4,7 +4,6 @@ import hashlib
 
 class Event(models.Model):
     id = models.IntegerField(primary_key=True)
-    owner = models.ForeignKey('auth.User')
     title = models.CharField(max_length=50)
     description = models.TextField()
     createdDate = models.DateTimeField(default=timezone.now)
@@ -22,8 +21,7 @@ class Event(models.Model):
 class Plan(models.Model):
     id = models.IntegerField(primary_key=True)
     eventID = models.IntegerField()
-    name = models.CharFileld(max_length=16)
-    owner = models.ForeignKey('auth.User')
+    name = models.CharField(max_length=16)
     createdDate = models.DateTimeField(default=timezone.now)
     data = models.TextField() # for JSON String
 
